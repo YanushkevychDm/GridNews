@@ -1,0 +1,118 @@
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: .55rem;
+  text-transform: uppercase;
+  padding: .4rem .6rem;
+  border-radius: 15px;
+  margin-bottom: .5rem;
+
+  &--sports { background-color: var(--sports-color); }
+  &--ent { background-color: var(--ent-color); }
+  &--tech { background-color: var(--tech-color); }
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color:var(--dark-color);
+  color:#fff;
+  padding: .5rem 1.5rem;
+
+  &--light { background-color: var(--light-color); }
+  &--primary { background-color: var(--primary-color); }
+  &--secondary { background-color: var(--secondary-color); }
+
+  &:hover { opacity: .9; }
+
+  &--block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+
+  &__title--light {
+    color: #fff;
+  }
+
+  .card-link { 
+    color: inherit;
+  }
+
+  &__heading {
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+}
+
+.card__heading--big {
+  font-size: 3rem;
+  // color: red;
+}
+
+
+.bg-dark { 
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-primary { 
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary { 
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+
+.list {
+
+  .list-item {
+    padding: .5rem 0;
+    border-bottom: 1px dotted #555;
+    width: 90%;
+
+    &__link {
+      color: #fff;
+    }
+
+    &__link:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+
+
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: .5rem;
+
+  & .category {
+    margin-top: .5rem;
+  }
+}

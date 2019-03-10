@@ -1,0 +1,43 @@
+.main-footer {
+  background-color: var(--dark-color);
+  color: #fff;
+
+  .footer-logo {
+    width: 150px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+
+    & > .footer-card:last-child {
+      background-color: #444;
+      grid-column: 1 / -1;
+      padding: .5rem;
+      text-align: center;
+      font-size: .85rem;
+    }
+
+    & .form {
+
+      &__input {
+        width: 90%;
+        padding: .5rem;
+        margin-bottom: .5rem;
+      }
+
+      &__submit {
+        width: 90%;
+      }
+    }
+  }
+
+
+
+}
+
+.footer-card__title--big {
+  font-size: 2rem;
+  // color: red;
+}

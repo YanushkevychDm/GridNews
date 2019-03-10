@@ -1,0 +1,35 @@
+.showcase {
+  color: #fff;
+  background-color: var( --dark-color);
+  padding: 2rem;
+  position: relative;
+
+  &:before {
+    content: '';
+    background: url('../img/featured.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+  }
+
+  & .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  & .showcase-content {
+    z-index: 1;
+  }
+
+  .category {
+    &__text {
+      margin-bottom: 1rem;
+    }
+  }
+}
